@@ -1,0 +1,17 @@
+<h1>Edit animal</h1>
+
+<form action="/animals/<%= @animal.id %>/update">
+  <div>
+    <label for="name">Name:</label>
+    <input type='text' id="name" name="name" placeholder="giraffe" value="<%= @animal.name %>">
+  </div>
+  <div>
+    <label for="pic">Picture Url:</label>
+    <input type='text' id="pic" name="pic" placeholder="http://picture.jpg" value="<%= @animal.pic %>">
+  </div>
+  <div>
+    <label for="fact">Random fact:</label>
+    <input type='text' id="fact" name="fact" placeholder="they are tall" value="<%= @animal.fact %>">
+  </div>
+  <input type="submit">
+</form>

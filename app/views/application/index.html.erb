@@ -1,0 +1,17 @@
+<h1>Animals</h1>
+<% @animals.each do |animal|%>
+<div><a href="/animals/<%= animal.id%>"><%= animal.name %></a>- RANDOM FACT -><%= animal.fact %> <img src=<%= animal.pic %> alt=""> </div>
+<% end %>
+
+
+<style>
+  img{
+    width:100px;
+    height:100px;
+  }
+  div{
+    border-color:#00ACEA;
+    border-style:groove;
+    border-width:15px;
+  }
+</style>
